@@ -1,4 +1,5 @@
 function numbers(){
+	
 	/* Numbers */
 	ctx.font = vertCenter * 0.16 + "px arial"; 
 	ctx.fillStyle = "#404850";

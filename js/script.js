@@ -17,7 +17,9 @@ var vertCenter = canvas.height / 2; //Vertical center of the canvas
 var horiCenter = canvas.width /2; //Horizontal center of the canvas
 ctx.translate(vertCenter, vertCenter); //Put the 0,0 coordinates to the center of the canvas
 
+//init function
 window.onload = function() {
+	readTextFile("js/setting"); // get settings
 	setInterval(draw, 1000); //redraw the clock every second.... smart? eeemmhhhmm
 };
 

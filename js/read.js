@@ -1,3 +1,6 @@
+
+var jsonObject;
+
 function readTextFile(path){
 
     var file = new XMLHttpRequest();
@@ -5,9 +8,15 @@ function readTextFile(path){
     file.onreadystatechange = function (){
 
         if((file.readyState === 4) && (file.status === 200 || file.status == 0)){
-            var allText = file.responseText;
-            alert(allText);
+            var TEXT = file.responseText;
+            jsonObject = JSON.parse(TEXT);
         }
     }
+
     file.send(null);
+}
+
+
+function getSetValue(key){
+    return jsonObject[key];
 }
