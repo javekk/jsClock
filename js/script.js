@@ -19,11 +19,13 @@ ctx.translate(vertCenter, vertCenter); //Put the 0,0 coordinates to the center o
 
 //init function
 window.onload = function() {
+
 	readTextFile("js/setting"); // get settings
 	setInterval(draw, 1000); //redraw the clock every second.... smart? eeemmhhhmm
 };
 
-function draw() {		
+function draw() {	
+		
 	background();
 	numbers();
 	hands();

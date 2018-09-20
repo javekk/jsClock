@@ -1,8 +1,10 @@
 {
+    "roman-numbers" : 1,
+    "numbers-size" : 6,
+    "numbers-color" : "#f0c060",
+    "numbers-font" : "arial",
+    
     "background-color" : "#d8d8e0" ,
-    "background-shape" : "#d8d8e0" ,
-
-    "hands-color" : "#d8d8e0" ,
-    "hands-shape" : "#d8d8e0"
+    "background-shape" : "circle" 
 
 }        

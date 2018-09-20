@@ -1,4 +1,3 @@
-
 var jsonObject;
 
 function readTextFile(path){
