@@ -20,7 +20,7 @@ function hands(){
 	ctx.beginPath();
 	ctx.arc(
 		0, 0, //Center in 0,0
-		vertCenter * 0.07, // 10% of the height 
+		vertCenter * getSizeForCenter(getSetValue('center-hands-size')), 
 		 0, 2 * Math.PI); // All the way
 	ctx.fillStyle =  getSetValue('center-hands-color') == undefined ? '#404850' : getSetValue('center-hands-color');
 	ctx.fill();  
@@ -85,6 +85,24 @@ function getSizeForlength(intSize){
 		case 8 : ret = 0.71;break;
 		case 9 : ret = 0.78;break;
 		case 10 : ret = 0.85;break;
+	}
+	return ret;
+}
+
+// Automatically transform the size of the number [1 to 10] to a percentage
+function getSizeForCenter(intSize){
+	var ret = 0.02; 
+	switch(intSize){
+		case 1 : ret = 0.03;break;
+		case 2 : ret = 0.04;break;
+		case 3 : ret = 0.05;break;
+		case 4 : ret = 0.06;break;
+		case 5 : ret = 0.07;break;
+		case 6 : ret = 0.08;break;
+		case 7 : ret = 0.09;break;
+		case 8 : ret = 0.10;break;
+		case 9 : ret = 0.11;break;
+		case 10 : ret = 0.12;break;
 	}
 	return ret;
 }

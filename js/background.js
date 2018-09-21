@@ -11,6 +11,8 @@ function background(){
 	var color =  getSetValue('background-color');
 	ctx.fillStyle = color == undefined ? '#d8d8e0' : color;
 
+
+
 	// Shape, default circle
 	switch(getSetValue('background-shape')){
 		case 'square' :
@@ -25,6 +27,13 @@ function background(){
 			break;
 	};
 	
-		
+	//Background
+	if(getSetValue('background-stroke')){
+		ctx.strokeStyle = getSetValue('background-stroke-color') == undefined ? '#404850' : getSetValue('background-stroke-color');
+		ctx.lineWidth = getSetValue('background-stroke-size');
+		ctx.stroke();
+	}
+	
 	ctx.fill(); // Fill the background
+
 }
