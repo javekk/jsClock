@@ -1,10 +1,28 @@
 {
-    "roman-numbers" : 1,
-    "numbers-size" : 6,
-    "numbers-color" : "#f0c060",
-    "numbers-font" : "arial",
-    
-    "background-color" : "#d8d8e0" ,
-    "background-shape" : "circle" 
+    "seconds-visible" : 1,
 
+    "roman-numbers" : 1,
+    "numbers-size" : 4,
+    "numbers-color" : "#f0c060",
+    "numbers-font" : "verdana",
+    
+    "background-color" : "#d8d8e0",
+    "background-shape" : "circle",
+
+    "seconds-hand-color" : "#f0c060",
+    "seconds-hand-width" : 1,
+    "seconds-hand-length" : 9,
+    "seconds-hand-rounded" : 1,
+    
+    "minutes-hand-color" : "#404850",
+    "minutes-hand-width" : 6,
+    "minutes-hand-length" : 9,
+    "minutes-hand-rounded" : 1,
+    
+    "hours-hand-color" : "#585060",
+    "hours-hand-width" : 8,
+    "hours-hand-length" : 4,
+    "hours-hand-rounded" : 1,
+
+    "center-hands-color" : "#585060"
 }        
