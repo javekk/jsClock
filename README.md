@@ -1,6 +1,6 @@
 # jsClock
 
-Simple clock developed in javascript, customizable with several themes
+Simple clock developed in javascript and HTML canvas
 
 
 ![Clock](clock-img.png)
